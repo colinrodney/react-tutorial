@@ -1,0 +1,15 @@
+1. "state"
+- Allows components to remember things.
+
+- Components become stateful by setting this.state in their constructors and is considered to be private to the component in whcih it's defined.
+
+NOTE:
+JavaScript classes in React CAN have construtors!
+
+Constructors
+- Used to initialize 'state' of the component.
+
+> When using a constructor in a JS class we must ALWAYS call super() when defining the constructor of a subcalss.
+
+>
+ALL React component classes that have a constructor should begin w/ the call to super(props)
