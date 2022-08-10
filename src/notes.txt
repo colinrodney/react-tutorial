@@ -1,0 +1,38 @@
+> 
+To allow components to remember things in react - use state
+
+- make a component stateful by setting this.state in the class
+component's constructor!
+    
+    - Constructors
+    - Special functions that create and initialize an object instance of a class.
+    - Called when an object is created using "new" keyword.
+    - In contect of React - Used to initialize state in a react class components
+
+    *NOTE
+        - Always call 'super' when defining the constructor of a subcalss.
+        - ALL React component classes having a constrcutor should start with a super(props)
+         call!
+
+- this.state is considered private to the react component in which it's 
+defined.
+
+- setState()
+    - Schedules an update to a component's state object.
+    - When state changes, component responds by re-rendering.
+    - When setState is called inside a component, React automatically udates child components inside f
+    it too.
+
+>
+Key differences between state and props?
+    - props (short for properties) and state are both vanilla JS objects.
+        - Both hold infomration that influences the output of the render() method
+    * props get passed to a component in same manner as parameters are passed to functions
+    * state: Managed WITHIN the component (Similar to variables declared within a function)
+
+Lifting State up
+    - To collect data from multiple children, or to have two child components
+    communicate w/ each other, declare the shared state in their parent component.
+
+    - Parent component will pass the stat back to the child component via props.
+        -This keeps child components properly synced w/ each other and w/ the parent component.
